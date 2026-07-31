@@ -21,7 +21,7 @@ import img20 from "../assets/portfolio/img20.JPG";
 import img21 from "../assets/portfolio/img21.jpg";
 import img22 from "../assets/portfolio/img22.JPG";
 import img23 from "../assets/portfolio/img23.JPG";
-import img24 from "../assets/portfolio/img24.JPG";
+import img24 from "../assets/portfolio/img24.jpg";
 import img25 from "../assets/portfolio/img25.jpg";
 import img26 from "../assets/portfolio/img26.jpg";
 import img27 from "../assets/portfolio/img27.JPG";

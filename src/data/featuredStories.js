@@ -1,11 +1,11 @@
-import wedding1Cover from "../assets/images/featured/Wedding1 cover.JPG";
-import wedding1Hero from "../assets/images/featured/Wedding1 hero.JPG";
+import wedding1Cover from "../assets/images/featured/Wedding1 cover.jpg";
+import wedding1Hero from "../assets/images/featured/Wedding1 hero.jpg";
 
 import wedding2Cover from "../assets/images/featured/Wedding2 cover.JPG";
 import wedding2Hero from "../assets/images/featured/Wedding2 hero.JPG";
 
-import wedding3Cover from "../assets/images/featured/Wedding3 cover.JPG";
-import wedding3Hero from "../assets/images/featured/Wedding3 hero.JPG";
+import wedding3Cover from "../assets/images/featured/Wedding3 cover.jpg";
+import wedding3Hero from "../assets/images/featured/Wedding3 hero.jpg";
 
 /* yash sakhi*/
 import ys1 from "../assets/images/Wedding/yash-sakhi/1.jpg";
