@@ -23,7 +23,7 @@ import img22 from "../assets/portfolio/img22.JPG";
 import img23 from "../assets/portfolio/img23.JPG";
 import img24 from "../assets/portfolio/img24.jpg";
 import img25 from "../assets/portfolio/img25.jpg";
-import img26 from "../assets/portfolio/img26.jpg";
+import img26 from "../assets/portfolio/img26.JPG";
 import img27 from "../assets/portfolio/img27.JPG";
 import img28 from "../assets/portfolio/img28.jpg";
 import img29 from "../assets/portfolio/img29.jpg";
