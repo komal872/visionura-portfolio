@@ -1,7 +1,7 @@
 import Hero from "../components/Hero";
 import FeaturedStories from "../components/FeaturedStories";
 import PortfolioGallery from "../components/PortfolioGallery";
-import Footer from "../components/Footer";
+import Footer from "../components/footer";
 
 function Home() {
   return (
