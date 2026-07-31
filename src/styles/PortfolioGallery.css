@@ -34,12 +34,13 @@
 .portfolio-item img{
     width:100%;
     display:block;
-    transition:.5s;
+    transition:transform .6s ease, filter .6s ease;
     cursor:pointer;
 }
 
 .portfolio-item:hover img{
     transform:scale(1.05);
+    filter:brightness(.95);
 }
 
 @media(max-width:992px){
@@ -101,4 +102,82 @@
         opacity:1;
         transform:scale(1);
     }
+}
+/* ======================================
+   TABLET
+====================================== */
+
+@media (max-width:1024px){
+
+.portfolio{
+    padding:90px 6%;
+}
+
+.portfolio-title h2{
+    font-size:38px;
+}
+
+.portfolio-grid{
+    column-count:2;
+    column-gap:16px;
+}
+
+}
+
+
+/* ======================================
+   MOBILE
+====================================== */
+
+@media (max-width:768px){
+
+.portfolio{
+    padding:70px 20px;
+}
+
+.portfolio-title{
+    margin-bottom:40px;
+}
+
+.portfolio-title p{
+    font-size:12px;
+    letter-spacing:2px;
+}
+
+.portfolio-title h2{
+    font-size:30px;
+}
+
+.portfolio-grid{
+    column-count:1;
+    column-gap:0;
+}
+
+.portfolio-item{
+    margin-bottom:16px;
+    border-radius:14px;
+}
+
+.lightbox-image{
+    max-width:95%;
+    max-height:80vh;
+}
+
+}
+
+
+/* ======================================
+   SMALL MOBILE
+====================================== */
+
+@media (max-width:480px){
+
+.portfolio-title h2{
+    font-size:26px;
+}
+
+.portfolio-item{
+    border-radius:12px;
+}
+
 }
