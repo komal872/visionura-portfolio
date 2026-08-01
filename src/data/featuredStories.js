@@ -1,39 +1,39 @@
-import wedding1Cover from "../assets/images/featured/Wedding1 cover.JPG";
-import wedding1Hero from "../assets/images/featured/Wedding1 hero.JPG";
+import wedding1Cover from "../assets/images/featured/Wedding1 cover.jpg";
+import wedding1Hero from "../assets/images/featured/Wedding1 hero.jpg";
 
 import wedding2Cover from "../assets/images/featured/Wedding2 cover.JPG";
 import wedding2Hero from "../assets/images/featured/Wedding2 hero.JPG";
 
-import wedding3Cover from "../assets/images/featured/Wedding3 cover.JPG";
-import wedding3Hero from "../assets/images/featured/Wedding3 hero.JPG";
+import wedding3Cover from "../assets/images/featured/Wedding3 cover.jpg";
+import wedding3Hero from "../assets/images/featured/Wedding3 hero.jpg";
 
 /* yash sakhi*/
-import ys1 from "../assets/images/Wedding/yash-sakhi/1.JPG";
-import ys2 from "../assets/images/Wedding/yash-sakhi/2.JPG";
-import ys3 from "../assets/images/Wedding/yash-sakhi/3.JPG";
-import ys4 from "../assets/images/Wedding/yash-sakhi/4.JPG";
-import ys5 from "../assets/images/Wedding/yash-sakhi/5.JPG";
-import ys6 from "../assets/images/Wedding/yash-sakhi/6.JPG";
-import ys7 from "../assets/images/Wedding/yash-sakhi/7.JPG";
-import ys8 from "../assets/images/Wedding/yash-sakhi/8.JPG";
-import ys9 from "../assets/images/Wedding/yash-sakhi/9.JPG";
-import ys10 from "../assets/images/Wedding/yash-sakhi/10.JPG";
-import ys11 from "../assets/images/Wedding/yash-sakhi/11.JPG";
-import ys12 from "../assets/images/Wedding/yash-sakhi/12.JPG";
-import ys13 from "../assets/images/Wedding/yash-sakhi/13.JPG";
-import ys14 from "../assets/images/Wedding/yash-sakhi/14.JPG";
-import ys15 from "../assets/images/Wedding/yash-sakhi/15.JPG";
-import ys16 from "../assets/images/Wedding/yash-sakhi/16.JPG";
+import ys1 from "../assets/images/Wedding/yash-sakhi/1.jpg";
+import ys2 from "../assets/images/Wedding/yash-sakhi/2.jpg";
+import ys3 from "../assets/images/Wedding/yash-sakhi/3.jpg";
+import ys4 from "../assets/images/Wedding/yash-sakhi/4.jpg";
+import ys5 from "../assets/images/Wedding/yash-sakhi/5.jpg";
+import ys6 from "../assets/images/Wedding/yash-sakhi/6.jpg";
+import ys7 from "../assets/images/Wedding/yash-sakhi/7.jpg";
+import ys8 from "../assets/images/Wedding/yash-sakhi/8.jpg";
+import ys9 from "../assets/images/Wedding/yash-sakhi/9.jpg";
+import ys10 from "../assets/images/Wedding/yash-sakhi/10.jpg";
+import ys11 from "../assets/images/Wedding/yash-sakhi/11.jpg";
+import ys12 from "../assets/images/Wedding/yash-sakhi/12.jpg";
+import ys13 from "../assets/images/Wedding/yash-sakhi/13.jpg";
+import ys14 from "../assets/images/Wedding/yash-sakhi/14.jpg";
+import ys15 from "../assets/images/Wedding/yash-sakhi/15.jpg";
+import ys16 from "../assets/images/Wedding/yash-sakhi/16.jpg";
 
 /* prabal rainy*/
 import pr1 from "../assets/images/Wedding/prabal-rainy/1.JPG";
 import pr2 from "../assets/images/Wedding/prabal-rainy/2.JPG";
-import pr3 from "../assets/images/Wedding/prabal-rainy/3.JPG";
+import pr3 from "../assets/images/Wedding/prabal-rainy/3.jpeg";
 import pr4 from "../assets/images/Wedding/prabal-rainy/4.JPG";
-import pr5 from "../assets/images/Wedding/prabal-rainy/5.JPG";
-import pr6 from "../assets/images/Wedding/prabal-rainy/6.JPG";
-import pr7 from "../assets/images/Wedding/prabal-rainy/7.JPG";
-import pr8 from "../assets/images/Wedding/prabal-rainy/8.JPG";
+import pr5 from "../assets/images/Wedding/prabal-rainy/5.jpeg";
+import pr6 from "../assets/images/Wedding/prabal-rainy/6.jpeg";
+import pr7 from "../assets/images/Wedding/prabal-rainy/7.jpeg";
+import pr8 from "../assets/images/Wedding/prabal-rainy/8.jpeg";
 import pr9 from "../assets/images/Wedding/prabal-rainy/9.JPG";
 import pr10 from "../assets/images/Wedding/prabal-rainy/10.JPG";
 import pr11 from "../assets/images/Wedding/prabal-rainy/11.JPG";
@@ -41,21 +41,21 @@ import pr12 from "../assets/images/Wedding/prabal-rainy/12.JPG";
 import pr13 from "../assets/images/Wedding/prabal-rainy/13.JPG";
 
 /* raghav astha*/
-import ra1 from "../assets/images/Wedding/raghav-astha/1.JPG";
-import ra2 from "../assets/images/Wedding/raghav-astha/2.JPG";
-import ra3 from "../assets/images/Wedding/raghav-astha/3.JPG";
-import ra4 from "../assets/images/Wedding/raghav-astha/4.JPG";
-import ra5 from "../assets/images/Wedding/raghav-astha/5.JPG";
-import ra6 from "../assets/images/Wedding/raghav-astha/6.JPG";
-import ra7 from "../assets/images/Wedding/raghav-astha/7.JPG";
-import ra8 from "../assets/images/Wedding/raghav-astha/8.JPG";
-import ra9 from "../assets/images/Wedding/raghav-astha/9.JPG";
-import ra10 from "../assets/images/Wedding/raghav-astha/10.JPG";
-import ra11 from "../assets/images/Wedding/raghav-astha/11.JPG";
-import ra12 from "../assets/images/Wedding/raghav-astha/12.JPG";
-import ra13 from "../assets/images/Wedding/raghav-astha/13.JPG";
-import ra14 from "../assets/images/Wedding/raghav-astha/14.JPG";
-import ra15 from "../assets/images/Wedding/raghav-astha/15.JPG";
+import ra1 from "../assets/images/Wedding/raghav-astha/1.jpg";
+import ra2 from "../assets/images/Wedding/raghav-astha/2.jpg";
+import ra3 from "../assets/images/Wedding/raghav-astha/3.jpg";
+import ra4 from "../assets/images/Wedding/raghav-astha/4.jpg";
+import ra5 from "../assets/images/Wedding/raghav-astha/5.jpg";
+import ra6 from "../assets/images/Wedding/raghav-astha/6.jpg";
+import ra7 from "../assets/images/Wedding/raghav-astha/7.jpg";
+import ra8 from "../assets/images/Wedding/raghav-astha/8.jpg";
+import ra9 from "../assets/images/Wedding/raghav-astha/9.jpg";
+import ra10 from "../assets/images/Wedding/raghav-astha/10.jpg";
+import ra11 from "../assets/images/Wedding/raghav-astha/11.jpg";
+import ra12 from "../assets/images/Wedding/raghav-astha/12.jpg";
+import ra13 from "../assets/images/Wedding/raghav-astha/13.jpg";
+import ra14 from "../assets/images/Wedding/raghav-astha/14.jpg";
+import ra15 from "../assets/images/Wedding/raghav-astha/15.jpg";
 
 
 const featuredStories = [
