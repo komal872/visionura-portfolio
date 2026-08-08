@@ -1,24 +1,22 @@
-import heroVideo from "../assets/videos/hero.mp4";
+import heroImage from "../assets/images/Wedding1.jpg";
 
 function Hero() {
   return (
     <section className="hero">
-      {/* Background Video */}
-      <video
-        className="hero-video"
-        autoPlay
-        loop
-        muted
-        playsInline
-      >
-        <source src={heroVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
 
-      {/* Dark Overlay */}
+      {/* Hero Image */}
+      <div className="hero-image-wrapper">
+        <img
+          src={heroImage}
+          alt="Visionura Wedding Photography"
+          className="hero-image"
+        />
+      </div>
+
+      {/* Overlay */}
       <div className="hero-overlay"></div>
 
-      {/* Hero Content */}
+      {/* Content */}
       <div className="hero-content">
 
         <h1 className="hero-logo">
@@ -42,9 +40,11 @@ function Hero() {
 
       </div>
 
+      {/* Scroll indicator */}
       <div className="scroll-indicator">
         <span></span>
       </div>
+
     </section>
   );
 }
