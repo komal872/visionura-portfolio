@@ -3,40 +3,40 @@
 ========================================= */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  width: 100%;
-  min-height: 100%;
-  scroll-behavior: smooth;
-  background: #111111;
+    width: 100%;
+    min-height: 100%;
+    scroll-behavior: smooth;
+    background: #111111;
 }
 
 body {
-  width: 100%;
-  min-height: 100%;
-  background: #111111;
-  color: #f5f1e8;
-  overflow-x: hidden;
+    width: 100%;
+    min-height: 100%;
+    background: #111111;
+    color: #f5f1e8;
+    overflow-x: hidden;
 }
 
 #root {
-  width: 100%;
-  min-height: 100%;
-  overflow-x: hidden;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
 }
 
 img,
 video {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 button,
 a {
-  -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
 }
 
 
@@ -45,79 +45,81 @@ a {
 ========================================= */
 
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
 
-  width: 100%;
-  height: 72px;
+    width: 100%;
+    height: 72px;
 
-  padding: 0 6%;
+    padding: 0 6%;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  background: rgba(10, 10, 10, 0.35);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+    background: rgba(10, 10, 10, 0.35);
 
-  border-bottom: 1px solid #2c2c2c;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 
-  z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,.12);
+
+    z-index: 1000;
 }
 
 .logo {
-  color: #f5f1e8;
+    color: #f5f1e8;
 
-  font-size: 28px;
-  font-weight: 600;
+    font-size: 28px;
+    font-weight: 600;
 
-  letter-spacing: 5px;
+    letter-spacing: 5px;
 
-  white-space: nowrap;
+    white-space: nowrap;
 }
 
 .nav-links {
-  display: flex;
+    display: flex;
 
-  gap: 45px;
+    gap: 45px;
 
-  list-style: none;
+    list-style: none;
 }
 
 .nav-links a {
-  color: #b5b5b5;
+    color: #b5b5b5;
 
-  text-decoration: none;
+    text-decoration: none;
 
-  font-size: 16px;
+    font-size: 16px;
 
-  transition: color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #d9c7a3;
+    color: #d9c7a3;
 }
 
 
 /* =========================================
-   HERO SECTION
+   HERO
 ========================================= */
 
 .hero {
-  position: relative;
+    position: relative;
 
-  width: 100%;
-  min-height: 100svh;
+    width: 100%;
+    height: 100svh;
+    min-height: 650px;
 
-  background: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background: #111111;
 
-  overflow: hidden;
+    overflow: hidden;
 }
 
 
@@ -126,31 +128,43 @@ a {
 ========================================= */
 
 .hero-image-wrapper {
-  position: absolute;
-  inset: 0;
+    position: absolute;
+    inset: 0;
 
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    overflow: hidden;
 
-  background: #111111;
+    background: #111111;
 
-  z-index: 0;
+    z-index: 0;
 }
 
 .hero-image {
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    inset: 0;
 
-  object-fit: contain;
-  object-position: center;
+    width: 100%;
+    height: 100%;
 
-  display: block;
+    display: block;
 
-  animation: heroImageZoom 12s ease-in-out infinite alternate;
+    /*
+       COVER = no black strips
+       Image fills complete hero
+    */
+    object-fit: cover;
+
+    object-position: center center;
+
+    /*
+       No continuous animation.
+       This improves mobile performance.
+    */
+    transform: none;
+
+    will-change: auto;
 }
 
 
@@ -159,17 +173,20 @@ a {
 ========================================= */
 
 .hero-overlay {
-  position: absolute;
-  inset: 0;
+    position: absolute;
+    inset: 0;
 
-  background: linear-gradient(
-    rgba(17, 17, 17, 0.28),
-    rgba(17, 17, 17, 0.68)
-  );
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(10,10,10,.22) 0%,
+            rgba(10,10,10,.32) 45%,
+            rgba(10,10,10,.72) 100%
+        );
 
-  z-index: 1;
+    z-index: 1;
 
-  pointer-events: none;
+    pointer-events: none;
 }
 
 
@@ -178,17 +195,17 @@ a {
 ========================================= */
 
 .hero-content {
-  position: relative;
+    position: relative;
 
-  z-index: 2;
+    z-index: 2;
 
-  width: min(900px, 90%);
+    width: min(950px, 90%);
 
-  padding: 30px 20px;
+    padding: 20px;
 
-  text-align: center;
+    text-align: center;
 
-  animation: fadeUp 1.2s ease;
+    animation: fadeUp .9s ease-out;
 }
 
 
@@ -197,17 +214,19 @@ a {
 ========================================= */
 
 .hero-logo {
-  margin: 0;
+    margin: 0;
 
-  color: #f5f1e8;
+    color: #f5f1e8;
 
-  font-size: clamp(48px, 10vw, 140px);
+    font-size: clamp(52px, 9vw, 135px);
 
-  line-height: 1;
+    line-height: 1;
 
-  font-weight: 300;
+    font-weight: 300;
 
-  letter-spacing: clamp(6px, 1.3vw, 18px);
+    letter-spacing: clamp(5px, 1.1vw, 18px);
+
+    white-space: nowrap;
 }
 
 
@@ -216,17 +235,17 @@ a {
 ========================================= */
 
 .hero-tagline {
-  margin: 16px 0 35px;
+    margin: 18px 0 34px;
 
-  color: #d9c7a3;
+    color: #d9c7a3;
 
-  text-transform: uppercase;
+    text-transform: uppercase;
 
-  font-size: clamp(9px, 1.2vw, 13px);
+    font-size: clamp(9px, 1.1vw, 13px);
 
-  letter-spacing: clamp(3px, 0.7vw, 8px);
+    letter-spacing: clamp(2px, .5vw, 6px);
 
-  line-height: 1.4;
+    line-height: 1.5;
 }
 
 
@@ -235,15 +254,15 @@ a {
 ========================================= */
 
 .hero-title {
-  margin: 0 0 25px;
+    margin: 0 0 24px;
 
-  color: #f5f1e8;
+    color: #f5f1e8;
 
-  font-size: clamp(34px, 5vw, 72px);
+    font-size: clamp(42px, 6vw, 76px);
 
-  line-height: 1.08;
+    line-height: 1.06;
 
-  font-weight: 400;
+    font-weight: 400;
 }
 
 
@@ -252,15 +271,15 @@ a {
 ========================================= */
 
 .hero-description {
-  max-width: 750px;
+    max-width: 700px;
 
-  margin: 0 auto;
+    margin: 0 auto;
 
-  color: #d0d0d0;
+    color: #dddddd;
 
-  font-size: clamp(15px, 1.6vw, 20px);
+    font-size: clamp(15px, 1.6vw, 20px);
 
-  line-height: 1.7;
+    line-height: 1.65;
 }
 
 
@@ -269,78 +288,70 @@ a {
 ========================================= */
 
 .scroll-indicator {
-  position: absolute;
+    position: absolute;
 
-  bottom: 35px;
-  left: 50%;
+    bottom: 30px;
+    left: 50%;
 
-  transform: translateX(-50%);
+    transform: translateX(-50%);
 
-  width: 28px;
-  height: 48px;
+    width: 26px;
+    height: 44px;
 
-  border: 2px solid rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255,255,255,.7);
 
-  border-radius: 50px;
+    border-radius: 50px;
 
-  z-index: 5;
+    z-index: 5;
 }
 
 .scroll-indicator span {
-  position: absolute;
+    position: absolute;
 
-  left: 50%;
-  top: 8px;
+    left: 50%;
+    top: 8px;
 
-  width: 6px;
-  height: 6px;
+    width: 5px;
+    height: 5px;
 
-  background: white;
+    background: #fff;
 
-  border-radius: 50%;
+    border-radius: 50%;
 
-  transform: translateX(-50%);
+    transform: translateX(-50%);
 
-  animation: scrollMouse 1.8s infinite;
+    animation: scrollMouse 1.8s infinite;
 }
 
 
 /* =========================================
-   HERO ANIMATIONS
+   ANIMATIONS
 ========================================= */
 
-@keyframes heroImageZoom {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.04);
-  }
-}
-
 @keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(35px);
-  }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes scrollMouse {
-  0% {
-    opacity: 1;
-    transform: translate(-50%, 0);
-  }
 
-  100% {
-    opacity: 0;
-    transform: translate(-50%, 18px);
-  }
+    0% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, 18px);
+    }
 }
 
 
@@ -350,25 +361,25 @@ a {
 
 @media (max-width: 1024px) {
 
-  .navbar {
-    padding: 0 5%;
-  }
+    .navbar {
+        padding: 0 5%;
+    }
 
-  .nav-links {
-    gap: 28px;
-  }
+    .nav-links {
+        gap: 28px;
+    }
 
-  .hero-content {
-    width: 92%;
-  }
+    .hero-content {
+        width: 92%;
+    }
 
-  .hero-logo {
-    font-size: clamp(55px, 11vw, 100px);
-  }
+    .hero-logo {
+        font-size: clamp(58px, 10vw, 100px);
+    }
 
-  .hero-title {
-    font-size: clamp(40px, 7vw, 60px);
-  }
+    .hero-title {
+        font-size: clamp(42px, 7vw, 64px);
+    }
 }
 
 
@@ -378,106 +389,155 @@ a {
 
 @media (max-width: 768px) {
 
-  .navbar {
-    height: 64px;
+    /* NAVBAR */
 
-    padding: 0 20px;
-  }
+    .navbar {
+        height: 62px;
 
-  .logo {
-    font-size: 21px;
-    letter-spacing: 3px;
-  }
+        padding: 0 18px;
 
-  .nav-links {
-    gap: 16px;
-  }
+        background: rgba(10,10,10,.75);
 
-  .nav-links a {
-    font-size: 13px;
-  }
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    .logo {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
 
 
-  /* HERO */
+    /* HERO */
 
-  .hero {
-    width: 100%;
+    .hero {
+        width: 100%;
 
-    min-height: 100svh;
+        height: 100svh;
 
-    height: 100svh;
-  }
+        min-height: 620px;
 
-  .hero-image-wrapper {
-    width: 100%;
-    height: 100%;
-  }
+        align-items: center;
 
-  /*
-     CONTAIN = complete photo visible.
-     No important part of the wedding photo
-     gets cut on portrait screens.
-  */
+        overflow: hidden;
+    }
 
-  .hero-image {
-    width: 100%;
-    height: 100%;
 
-    object-fit: contain;
-    object-position: center;
+    /* IMAGE */
 
-    animation: heroImageZoomMobile 14s ease-in-out infinite alternate;
-  }
+    .hero-image-wrapper {
+        width: 100%;
+        height: 100%;
 
-  .hero-overlay {
-    background: linear-gradient(
-      to bottom,
-      rgba(17, 17, 17, 0.22),
-      rgba(17, 17, 17, 0.48) 50%,
-      rgba(17, 17, 17, 0.78) 100%
-    );
-  }
+        overflow: hidden;
+    }
 
-  .hero-content {
-    width: 92%;
-    max-width: 500px;
+    .hero-image {
+        width: 100%;
+        height: 100%;
 
-    padding: 20px 10px;
-  }
+        /*
+           Important:
+           mobile image completely fills screen
+        */
+        object-fit: cover;
 
-  .hero-logo {
-    font-size: clamp(40px, 11vw, 64px);
+        /*
+           Slightly higher framing
+           so wedding subjects are visible.
+        */
+        object-position: center center;
 
-    letter-spacing: clamp(4px, 2vw, 8px);
-  }
+        transform: none;
+    }
 
-  .hero-tagline {
-    margin: 14px 0 28px;
 
-    font-size: 8px;
+    /* OVERLAY */
 
-    letter-spacing: 2.5px;
-  }
+    .hero-overlay {
+        background:
+            linear-gradient(
+                to bottom,
+                rgba(10,10,10,.18) 0%,
+                rgba(10,10,10,.28) 40%,
+                rgba(10,10,10,.72) 100%
+            );
+    }
 
-  .hero-title {
-    font-size: clamp(36px, 10vw, 52px);
 
-    line-height: 1.06;
+    /* CONTENT */
 
-    margin-bottom: 20px;
-  }
+    .hero-content {
+        width: 100%;
+        max-width: 500px;
 
-  .hero-description {
-    max-width: 330px;
+        padding: 0 20px;
 
-    font-size: 15px;
+        margin-top: 30px;
+    }
 
-    line-height: 1.55;
-  }
 
-  .scroll-indicator {
-    display: none;
-  }
+    /* LOGO */
+
+    .hero-logo {
+        font-size: clamp(44px, 12vw, 62px);
+
+        letter-spacing: 6px;
+
+        line-height: 1;
+
+        white-space: nowrap;
+    }
+
+
+    /* TAGLINE */
+
+    .hero-tagline {
+        margin: 14px 0 32px;
+
+        font-size: 8px;
+
+        letter-spacing: 2.4px;
+
+        line-height: 1.5;
+    }
+
+
+    /* TITLE */
+
+    .hero-title {
+        font-size: clamp(39px, 10.5vw, 52px);
+
+        line-height: 1.06;
+
+        margin-bottom: 22px;
+    }
+
+
+    /* DESCRIPTION */
+
+    .hero-description {
+        max-width: 340px;
+
+        font-size: 16px;
+
+        line-height: 1.55;
+    }
+
+
+    /* HIDE SCROLL */
+
+    .scroll-indicator {
+        display: none;
+    }
 }
 
 
@@ -487,54 +547,72 @@ a {
 
 @media (max-width: 430px) {
 
-  .navbar {
-    padding: 0 16px;
-  }
+    .navbar {
+        padding: 0 15px;
+    }
 
-  .logo {
-    font-size: 19px;
-    letter-spacing: 2.5px;
-  }
+    .logo {
+        font-size: 18px;
 
-  .nav-links {
-    gap: 12px;
-  }
+        letter-spacing: 2.5px;
+    }
 
-  .nav-links a {
-    font-size: 12px;
-  }
+    .nav-links {
+        gap: 11px;
+    }
 
-  .hero-content {
-    width: 94%;
-  }
+    .nav-links a {
+        font-size: 11px;
+    }
 
-  .hero-logo {
-    font-size: 38px;
 
-    letter-spacing: 5px;
-  }
+    /* HERO */
 
-  .hero-tagline {
-    font-size: 7px;
+    .hero {
+        min-height: 600px;
+    }
 
-    letter-spacing: 2px;
+    .hero-content {
+        width: 100%;
 
-    margin: 12px 0 25px;
-  }
+        padding: 0 18px;
 
-  .hero-title {
-    font-size: 40px;
+        margin-top: 20px;
+    }
 
-    line-height: 1.05;
-  }
 
-  .hero-description {
-    font-size: 14px;
+    .hero-logo {
+        font-size: 42px;
 
-    line-height: 1.5;
+        letter-spacing: 5px;
+    }
 
-    max-width: 300px;
-  }
+
+    .hero-tagline {
+        font-size: 7px;
+
+        letter-spacing: 2px;
+
+        margin: 12px 0 30px;
+    }
+
+
+    .hero-title {
+        font-size: 40px;
+
+        line-height: 1.05;
+
+        margin-bottom: 22px;
+    }
+
+
+    .hero-description {
+        max-width: 305px;
+
+        font-size: 15px;
+
+        line-height: 1.5;
+    }
 }
 
 
@@ -544,42 +622,36 @@ a {
 
 @media (max-width: 360px) {
 
-  .logo {
-    font-size: 17px;
-  }
+    .logo {
+        font-size: 16px;
 
-  .nav-links {
-    gap: 9px;
-  }
+        letter-spacing: 2px;
+    }
 
-  .nav-links a {
-    font-size: 11px;
-  }
+    .nav-links {
+        gap: 8px;
+    }
 
-  .hero-logo {
-    font-size: 34px;
-  }
-
-  .hero-title {
-    font-size: 35px;
-  }
-
-  .hero-description {
-    font-size: 13px;
-  }
-}
+    .nav-links a {
+        font-size: 10px;
+    }
 
 
-/* =========================================
-   MOBILE IMAGE ANIMATION
-========================================= */
+    .hero-logo {
+        font-size: 36px;
 
-@keyframes heroImageZoomMobile {
-  from {
-    transform: scale(1);
-  }
+        letter-spacing: 4px;
+    }
 
-  to {
-    transform: scale(1.025);
-  }
+    .hero-tagline {
+        font-size: 6.5px;
+    }
+
+    .hero-title {
+        font-size: 35px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
 }

@@ -1,27 +1,19 @@
-import heroImage from "../assets/images/Wedding1.jpg";
+import heroImage from "../assets/images/Wedding1.jpeg";
 
 function Hero() {
   return (
     <section className="hero">
+      <img
+        src={heroImage}
+        alt="Visionura Wedding Photography"
+        className="hero-image"
+        fetchPriority="high"
+      />
 
-      {/* Hero Image */}
-      <div className="hero-image-wrapper">
-        <img
-          src={heroImage}
-          alt="Visionura Wedding Photography"
-          className="hero-image"
-        />
-      </div>
-
-      {/* Overlay */}
       <div className="hero-overlay"></div>
 
-      {/* Content */}
       <div className="hero-content">
-
-        <h1 className="hero-logo">
-          VISIONURA
-        </h1>
+        <h1 className="hero-logo">VISIONURA</h1>
 
         <p className="hero-tagline">
           POWERED BY VISION. DRIVEN BY EMOTION.
@@ -37,14 +29,11 @@ function Hero() {
           Luxury wedding photography & films that preserve
           emotions, relationships and timeless memories.
         </p>
-
       </div>
 
-      {/* Scroll indicator */}
       <div className="scroll-indicator">
         <span></span>
       </div>
-
     </section>
   );
 }
