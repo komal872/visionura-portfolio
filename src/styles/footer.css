@@ -748,9 +748,9 @@ a {
 
     .footer-tagline {
         font-size: 6px;
-        letter-spacing: 2.5px;
-        line-height: 1.5;
-        margin-bottom: 38px;
+        letter-spacing: 1.2px;
+        white-space: nowrap;
+        margin-bottom: 32px;
     }
 
     .footer-links {
